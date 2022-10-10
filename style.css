@@ -1,0 +1,284 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+*{box-sizing: border-box;}
+body{ font-family: 'Lato', sans-serif; font-size: 1rem; color: #000;background-color: #fff;}
+
+
+
+
+
+.container{margin:0 auto}
+.row{display: flex;flex-wrap: wrap;}
+.text-start{text-align: left}
+.text-center{text-align: center}
+.text-end{text-align: right}
+.text-justify{text-align: justify}
+.text-uppercase{text-transform: uppercase}
+.text-lowercase{text-transform: lowercase}
+.text-capitalize{text-transform: capitalize}
+.img-fluid{max-width: 100%; height: auto}
+
+
+
+@media only screen and (max-width:575px){
+    .container{width: 100%;padding: 0 12px;}
+    .col-1{width: 8.3333%}
+    .col-2{width: 16.6666%}
+    .col-3{width: 25%}
+    .col-4{width: 33.3333%}
+    .col-5{width: 41.6666%}
+    .col-6{width: 50%}
+    .col-7{width: 58.3333%}
+    .col-8{width: 66.6666%}
+    .col-9{width: 75%}
+    .col-10{width: 83.3333%}
+    .col-11{width: 91.6666%}
+    .col-12{width: 100%;}
+    .col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11{padding: 0 .75rem}
+}
+
+
+@media only screen and (min-width:1200px){
+    .container{width: 1140px;padding: 0 12px;}
+    .col-xl-1{width: 8.3333%}
+    .col-xl-2{width: 16.6666%}
+    .col-xl-3{width: 25%}
+    .col-xl-4{width: 33.3333%}
+    .col-xl-5{width: 41.6666%}
+    .col-xl-6{width: 50%}
+    .col-xl-7{width: 58.3333%}
+    .col-xl-8{width: 66.6666%}
+    .col-xl-9{width: 75%}
+    .col-xl-10{width: 83.3333%}
+    .col-xl-11{width: 91.6666%}
+    .col-xl-1,.col-xl-2,.col-xl-3,.col-xl-4,.col-xl-5,.col-xl-6,.col-xl-7,.col-xl-8,.col-xl-9,.col-xl-10,.col-xl-11{padding: 0 .75rem}
+}
+
+/*Header*/
+.heading-header{font-size: 2.5rem;color: #35C0E6;letter-spacing: 1px;text-transform: capitalize;padding: 1.6rem 0;}
+.top-menu{padding-top: 1.1rem;}
+.top-menu ul{float: right;}
+.top-menu ul li{display: inline-block; padding: 1rem 1.3rem; transition: background-color 0.5s ;}
+.top-menu ul li a{text-decoration: none;text-transform: uppercase;font-size: 16px; font-weight: bold;color: #000;}
+.top-menu ul li:first-child{background-color: #35C0E6;}
+.top-menu ul li:first-child a{color: #fff;}
+.top-menu ul li:hover{background-color: #35C0E6;cursor: pointer;}
+.top-menu ul li:hover a{color: #fff;}
+/*vertical mwnu*/
+.top-menu-right-icon,.vertical-menu{display: none;}
+.vertical-menu ul li{text-align: center;padding: 0.5rem 0;}
+.vertical-menu ul li a{text-decoration: none;color: #000;font-size: 15px;letter-spacing: 1.4px;}
+.vertical-menu ul li a:hover{color: #35C0E6;}
+/*title*/
+.title-head{text-align: center;padding-top: 4rem;font-size: 35px;color: #35C0E6;padding-bottom: 3rem; text-transform: capitalize;letter-spacing: 0.5px;}
+
+.title-description{text-align: center;font-size: 15px;color: #35C0E6;text-transform: uppercase;padding-bottom: 5rem;}
+/*Our Work Section*/
+.heading{font-size: 2.5rem;color: #35C0E6;letter-spacing: 0.4px;text-transform: capitalize;padding: 5rem 0; border-bottom: 0.1px solid rgb(236, 236, 236);}
+.cards{margin-top: 3rem;background-color: #F9F9F9; padding: 0 2rem;border-bottom: 30px solid #35C0E6;}
+.cards-heading{font-size: 20px;padding-top: 2rem;padding-bottom: 1.5rem;color: #000;}
+.cards p{margin-top: 3rem;margin-bottom: 5rem;}
+.cards-content{font-size: 15px;color:#666;width: 65%;line-height: 1.5;margin-left: auto;margin-right: auto}
+.icons{color: #35C0E6;font-size: 30px;}
+.learn-more{color: #35C0E6; text-decoration: none;transition:color 0.5s;font-size: 15px;}
+.learn-more:hover{color: #000;}
+/*About us */
+.about-us-row{padding-top: 3rem;}
+.about-us-title{text-align: center;color: #35C0E6;font-size: 20px;padding-bottom: 2rem;letter-spacing: 0.6px;font-weight: 500;}
+.about-us-content{padding-left: 2rem;line-height: 1.5;font-size: 14.5px;color: #666;padding-bottom: 1.5rem;}
+.line{ border-bottom: 0.2px solid rgb(236, 236, 236);margin-top: 4rem;}
+/*Footer*/
+.footer-heading{color: #35C0E6;padding-top: 5rem;padding-bottom: 3rem;font-size: 17px;font-weight: 500;}
+.footer-name{font-weight: 800;padding-bottom: 10px;font-size: 15px;}
+.footer-address{line-height: 1.4;color: #666;font-size: 15px;}
+.footer-contact-info{line-height: 1.5;padding-top: 1.6rem;padding-left: 1.3rem;font-size: 16px;color: #666;}
+.footer{ border-bottom: 0.2px solid rgb(236, 236, 236);margin-top: 4rem;margin-bottom: 7arem;}
+.footer-nav a{text-decoration: none; color: #666;line-height: 1.7;font-size: 16px;transition: color 0.4s;}
+.footer-nav a:hover{color: #35C0E6;}
+.latest-post-content{line-height: 1.3;color: #666;font-size: 15px;}
+.footer-img{padding-top: 9px;}
+/*footerbottom*/
+.footer-bottom{padding-bottom: 5rem;}
+.footer-bottom-left{letter-spacing: 1.3;font-size: 15px;padding-top: 3rem;}
+.footer-bottom-left a{text-decoration: none; color: #35C0E6;transition: color 0.5s;}
+.footer-bottom-left a:hover{color: #ff00bf;}
+.right-socials a{color: #35C0E6;letter-spacing: 2;font-size: 20px;}
+.footer-bottom-Right{padding-top: 3rem;}
+/* slider */
+.mySlides {display: none}
+.slider img {vertical-align: middle;}
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev{font-size: 20px;color: #35C0E6;}
+  .next{font-size: 20px;color: #35C0E6;}
+
+  .prev:hover, .next:hover {
+    background-color: #35C0E6;
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+  .text{
+    /* border:solid; */
+    width: 55%;
+    left: 30%;
+    bottom: 10%;
+  }
+  .text p{background-color: #35C0E6; color: #fff;padding: 1rem 0.75rem;
+font-size: 16px;margin-bottom: 0.5rem;text-transform: capitalize;text-align: left;}
+    .text p:nth-child(1){font-size: 35px;padding: 2.5rem 0.75rem}
+    .text p:nth-child(2){font-size: 24px;width: 60%;}
+    .text p:nth-child(3){font-size: 30px;width: 45%;}
+/*responsive*/
+@media only screen and (max-width:575px){
+    .top-menu-right{display: none;}
+    .top-menu-right-icon{display: block; text-align: center;font-size: 2rem;padding: 1.5rem;cursor: pointer;}
+    .row{justify-content: space-between;}
+    .cards-top .cards-bottom{width: 95%;margin:1rem auto;}
+    .about-us-title{padding-top: 2rem;}
+    .footer-bottom-left{text-align: center !important;}
+    .footer-bottom-Right{padding-top: 3rem;text-align: center !important;}
+    .right-socials a{color: #35C0E6;letter-spacing: 2;font-size: 20px;}
+    .text{
+        width: 65%;
+        left: 24%;
+        bottom: 0;
+      }
+    .text p{background-color: #35C0E6; color: #fff;padding: 0.3rem 0.25rem;
+    font-size: 16px;margin-bottom: 0.5rem;text-transform: capitalize;text-align: left;}
+    .text p:nth-child(2){font-size: 12px;width: 80%;}
+    .text p:nth-child(3){font-size: 13px;width: 45%;}
+    .text p:nth-child(1){font-size: 15px;padding: 0.3rem 0.25rem}
+
+
+}
+    
+@media only screen and (min-width:1200px){
+    .row{justify-content: space-between;}
+    .cards-top{width: 32%;}
+    .cards-bottom{width: 49%;}
+    
+}
